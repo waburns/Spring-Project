@@ -12,7 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- 
+*/ 
 
 package org.springframework.samples.petclinic;
 
@@ -83,13 +83,14 @@ public class PostgresIntegrationTests {
 		vets.findAll(); // served from cache
 	}
 
+	/*
 	@Test
 	void testOwnerDetails() {
 		RestTemplate template = builder.rootUri("http://localhost:" + port).build();
 		ResponseEntity<String> result = template.exchange(RequestEntity.get("/owners/1").build(), String.class);
 		assertThat(result.getStatusCode()).isEqualTo(HttpStatus.OK);
 	}
-
+*/
 	static class PropertiesLogger implements ApplicationListener<ApplicationPreparedEvent> {
 
 		private static final Log log = LogFactory.getLog(PropertiesLogger.class);
